@@ -1,0 +1,336 @@
+    1  cd
+    2  cd /
+    3  ls -la
+    4  cd ..
+    5  exit
+    6  cd /
+    7  ls -la
+    8  git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+    9  cd /home/
+   10  cd jsosa/
+   11  ls -la
+   12  git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+   13  ./UTN-FRA_SO_Examenes/202406/script_Precondicion.sh
+   14  exit
+   15  grep jsosa /etc/shadow | awk -F ':' '{print $2}'
+   16  sudo grep jsosa /etc/shadow | awk -F ':' '{print $2}'
+   17  sudo su
+   18  exit
+   19  apt update
+   20  exit
+   21  apt update
+   22  exit
+   23  sudo su
+   24  cat /etc/sudoers.d/jsosa 
+   25  sudo cat /etc/sudoers.d/jsosa 
+   26  sudo apt install wget gpg
+   27  sudo apt update
+   28  sudo apt install software-properties-common
+   29  sudo add-apt-repository --yes --update ppa:ansible/ansible
+   30  sudo apt install ansible
+   31  ansible --version
+   32  git --version
+   33  cd /
+   34  ls -la
+   35  cd 
+   36  ls -la
+   37  ansible --version
+   38  clear
+   39  cd /
+   40  ls -la
+   41  cd 
+   42  ls -la
+   43  net-tools
+   44  net-tools -v
+   45  sudo apt install net-tools
+   46  sudo apt-get install ca-certificates curl
+   47  sudo install -m 0755 -d /etc/apt/keyrings
+   48  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+   49  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   50  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+   51    $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   52  sudo apt-get update
+   53  sudo docker run hello-world
+   54  history
+   55  fdisk
+   56  lsblk
+   57  fdisk /dev/sdb
+   58  sudo fdisk /dev/sdb
+   59  history
+   60  wipefs -a /dev/sdb 
+   61  sudo wipefs -a /dev/sdb 
+   62  sudo wipefs -a /dev/sdc
+   63  sudo fdisk /dev/sdb
+   64  cd /
+   65  ls -la
+   66  cd 
+   67  ls -la
+   68  sudo fdisk /dev/sdb
+   69  sudo lsblk
+   70  sudo fdisk /dev/sdb
+   71  sudo fdisk /dev/sdc
+   72  pvcreate
+   73  man pvcreate
+   74  sudo pvcreate
+   75  sudo pvs
+   76  sudo pvcreate /dev/sdb1
+   77  sudo aá¹pt install lvm2
+   78  sudo aápt install lvm2
+   79  sudo apt install lvm2
+   80  sudo pvcreate /dev/sdb1
+   81  sudo pvcreate /dev/sdc1
+   82  vgcreate
+   83  vgcreate --help
+   84  sudo vgcreate vg_datos /dev/sdb1
+   85  sudo vgcreate vg_temp /dev/sdc1
+   86  lvcreate -help
+   87  lvcreate --help
+   88  sudo lvcreate -L 5M -n lv_docker vg_datos
+   89  sudo lvcreate -L 1.5G -n lv_workareas vg_datos
+   90  sudo lvcreate -L 512M -n lv_swap vg_temp
+   91  mkfs.ext4 /dev/vg_datos/lv_docker 
+   92  sudo mkfs.ext4 /dev/vg_datos/lv_docker 
+   93  sudo mkfs.ext4 /dev/vg_datos/lv_workareas 
+   94  mkswap
+   95  mkswap man
+   96  man mkswap
+   97  sudo mkswap /dev/vg_temp/lv_swap 
+   98  swapon /dev/vg_temp/lv_swap
+   99  sudo swapon /dev/vg_temp/lv_swap
+  100  sudo mount /dev/vg_datos/lv_docker /var/lib/docker/
+  101  mkdir -p /work
+  102  sudo mkdir -p /work
+  103  sudo mount /dev/vg_datos/lv_workareas /work/
+  104  sudo lsblk
+  105  umount /var/lib/docker
+  106  sudo umount /var/lib/docker
+  107  sudo umount /work 
+  108  sudo lsblk
+  109  sudo swapoff */dev/vg_temp/lv_swap
+  110  sudo swapoff */dev/vg_temp
+  111  sudo lvremove -y /dev/vg_datos
+  112  sudo lvremove -y /dev/vg_temp
+  113  swapon --show
+  114  sudo swapoff /dev/dm-2 
+  115  sudo lvremove -y /dev/vg_temp
+  116  sudo vgremove -y vg_datos
+  117  sudo vgremove -y vg_temp
+  118  pvremove /dev/sdb1
+  119  sudo pvremove /dev/sdb1
+  120  sudo pvremove /dev/sdc1
+  121  pvremove /dev/sdb1
+  122  sudo pvremove /dev/sdb1
+  123  sudo sfdisk --delte /dev/sdb
+  124  sudo sfdisk --delete /dev/sdb
+  125  sudo sfdisk --delete /dev/sdc
+  126  sudo lsblk
+  127  ls -la
+  128  nano RTA_Examen_20250702/Punto_A.sh
+  129  chmod +x RTA_Examen_20250702/Punto_A.sh 
+  130  cd RTA_Examen_20250702/
+  131  lÃs -la
+  132  ls -la
+  133  sudo ./Punto_A.sh 
+  134  cd ..
+  135  ls -la
+  136  git clone https://github.com/Janegro09/UTNFRA_SO_2do_TP_SOSA.git
+  137  ls -la
+  138  cp -r RTA_Examen_20250702/ UTNFRA_SO_2do_TP_SOSA/
+  139  tree UTNFRA_SO_2do_TP_SOSA/
+  140  cd UTN-FRA_SO_Examenes/
+  141  ls -la
+  142  cd ..
+  143  cp -r UTN-FRA_SO_Examenes/202406/ UTNFRA_SO_2do_TP_SOSA/
+  144  tree UTNFRA_SO_2do_TP_SOSA/
+  145  ls -la
+  146  cd UTNFRA_SO_2do_TP_SOSA/
+  147  ls -la
+  148  git add .
+  149  git commit -m "Add: punto a done
+  150  "
+  151  git push
+  152  cd ..
+  153  ls -la
+  154  rm -r UTNFRA_SO_2do_TP_SOSA/
+  155  ls -la
+  156  git clone git@github.com:Janegro09/UTNFRA_SO_2do_TP_SOSA.git
+  157  ssh-keygen -t ed25519 -C "javier.sosa099@gmail.com"
+  158  cat /home/jsosa/.ssh/id_ed25519
+  159  cat /home/jsosa/.ssh/id_ed25519.pub 
+  160  ls -la
+  161  git clone git@github.com:Janegro09/UTNFRA_SO_2do_TP_SOSA.git
+  162  cd UTNFRA_SO_2do_TP_SOSA/
+  163  ls -la
+  164  cp -r UTN-FRA_SO_Examenes/202406/ UTNFRA_SO_2do_TP_SOSA/
+  165  cd ..
+  166  cp -r UTN-FRA_SO_Examenes/202406/ UTNFRA_SO_2do_TP_SOSA/
+  167  cp -r RTA_Examen_20250702/ UTNFRA_SO_2do_TP_SOSA/
+  168  cd UTNFRA_SO_2do_TP_SOSA/
+  169  ls -la
+  170  git add .
+  171  git commit -m "Add: punto a done"
+  172  git push
+  173  ls -la
+  174  git pull
+  175  tree
+  176  cd ..
+  177  clear
+  178  ls -la
+  179  cd UTN-FRA_SO_Examenes/202406/bash_script/
+  180  ls -la
+  181  cd -
+  182  cat UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt 
+  183  sudo nano /usr/local/bin/SosaAltaUser-Groups.sh
+  184  sudo chmod +x /usr/local/bin/SosaAltaUser-Groups.sh
+  185  ls-la /usr/local/bin/
+  186  ls -la /usr/local/bin/
+  187  sudo /usr/local/bin/SosaAltaUser-Groups.sh jsosa UTN-FRA_SO_Examenes/202406/bash_script/Lista_Usuarios.txt 
+  188  ls -la
+  189  cd /home/
+  190  ls -la
+  191  cat /etc/passwd
+  192  awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd
+  193  cp /usr/local/bin/SosaAltaUser-Groups.sh /home/jsosa/UTNFRA_SO_2do_TP_SOSA/RTA_Examen_20250702/Punto_B.sh 
+  194  ls -la /home/jsosa/UTNFRA_SO_2do_TP_SOSA/RTA_Examen_20250702/Punto_B.sh 
+  195  ls -la /home/jsosa/UTNFRA_SO_2do_TP_SOSA/RTA_Examen_20250702/
+  196  chmod -x /home/jsosa/UTNFRA_SO_2do_TP_SOSA/RTA_Examen_20250702/Punto_B.sh 
+  197  ls -la /home/jsosa/UTNFRA_SO_2do_TP_SOSA/RTA_Examen_20250702/
+  198  sudo chmod -x /home/jsosa/UTNFRA_SO_2do_TP_SOSA/RTA_Examen_20250702/Punto_B.sh 
+  199  ls -la /home/jsosa/UTNFRA_SO_2do_TP_SOSA/RTA_Examen_20250702/
+  200  ls -la /usr/local/bin/SosaAltaUser-Groups.sh 
+  201  ls -la /usr/local/bin/
+  202  cp /usr/local/bin/SosaAltaUser-Groups.sh /home/jsosa/RTA_Examen_20250702/
+  203  cd /home/jsosa/RTA_Examen_20250702/
+  204  ls -la
+  205  rm Punto_B.sh 
+  206  mv SosaAltaUser-Groups.sh Punto_B.sh
+  207  ls -la
+  208  sudo usermod -a -G docker $(whoami)
+  209  sudo systemctl status docker
+  210  clear
+  211  cd ../UTN-FRA_SO_Examenes/202406/docker/
+  212  ls -la
+  213  cat index.html 
+  214  cd
+  215  ls -la
+  216  cd RTA_Examen_20250702/
+  217  ls -la
+  218  cd ..
+  219  nano UTNFRA_SO_2do_TP_SOSA/202406/docker/index.html 
+  220  cd UTNFRA_SO_2do_TP_SOSA/
+  221  git status
+  222  git add .
+  223  git commit -m "ADD: punto b done and docker file html change"
+  224  git push
+  225  docker run nginx
+  226  sudo systemctl restart docker
+  227  sudo systemctl status docker
+  228  docker run nginx
+  229  sudo docker run nginx
+  230  cd /home/jsosa/UTNFRA_SO_2do_TP_SOSA/202406/docker/
+  231  ls -la
+  232  nano Dockerfile
+  233  ls -la
+  234  docker build -t web-sosa
+  235  docker build -t web-sosa .
+  236  docker login
+  237  docker tag web-sosa javiersosa/web-sosa
+  238  docker push javiersosa/web-sosa
+  239  nano run.sh
+  240  chmod +x run.sh 
+  241  ls -la
+  242  ./run.sh 
+  243  nano run.sh
+  244  ./run.sh 
+  245  nano run.sh
+  246  cp run.sh /home/jsosa/UTNFRA_SO_2do_TP_SOSA/RTA_Examen_20250702/Punto_C.sh 
+  247  cd /home/jsosa/UTNFRA_SO_2do_TP_SOSA/RTA_Examen_20250702
+  248  ls -la
+  249  chmod +x *
+  250  ls -la
+  251  cd ..
+  252  ls -la
+  253  git add .
+  254  git commit -m "add: punto c done"
+  255  git push
+  256  docker build -t web1-sosa .
+  257  cd /home/jsosa/UTNFRA_SO_2do_TP_SOSA/202406/docker/
+  258  ls -la
+  259  nano Dockerfile 
+  260  docker build -t web1-sosa .
+  261  docker login
+  262  docker tag web1-sosa janegro09/web1-sosa
+  263  docker push janegro09/web1-sosa
+  264  nano run.sh 
+  265  ls -la
+  266  ./run.sh 
+  267  sudo lsof -i :8080
+  268  docker stop
+  269  systemctl restart docker
+  270  ./run.sh 
+  271  cp /usr/local/bin/SosaAltaUser-Groups.sh /home/jsosa/UTNFRA_SO_2do_TP_SOSA/RTA_Examen_20250702/
+  272  tree /home/jsosa/UTNFRA_SO_2do_TP_SOSA/RTA_Examen_20250702/
+  273  cd ..
+  274  tree ansible/
+  275  mkdir /tmp/2do_parcial/{alumno,equipo}
+  276  mkdir -p /tmp/2do_parcial/{alumno,equipo}
+  277  tree /tmp/
+  278  tree /tmp/2do_parcial/
+  279  cd ..
+  280  ls -la
+  281  cd RTA_Examen_20250702/
+  282  ls -la
+  283  nano Punto_C.sh 
+  284  nano Punto_D.sh 
+  285  cat ../202406/ansible/playbook.yml 
+  286  cat ../202406/ansible/ansible.cfg 
+  287  cd ..
+  288  cd 202406/ansible/
+  289  ls -la
+  290  cd roles/2do_parcial/vars/
+  291  cd ..
+  292  tree
+  293  ls -la
+  294  cd 2do_parcial/
+  295  ls -la
+  296  cat README.md 
+  297  tree
+  298  cat tasks/main.yml 
+  299  nano /home/jsosa/RTA_Examen_20250702/Punto_D.sh 
+  300  ./home/jsosa/RTA_Examen_20250702/Punto_D.sh 
+  301  cd /home/jsosa/RTA_Examen_20250702/
+  302  ls -la
+  303  chmod +x *
+  304  ls -la
+  305  ./Punto_D.sh 
+  306  nano Punto_D.sh 
+  307  cd ..
+  308  cd UTNFRA_SO_2do_TP_SOSA/RTA_Examen_20250702/
+  309  ls -la
+  310  nano Punto_D.sh 
+  311  cp /home/jsosa/RTA_Examen_20250702/Punto_D.sh /home/jsosa/UTNFRA_SO_2do_TP_SOSA/RTA_Examen_20250702/Punto_D.sh 
+  312  cd ..
+  313  ls -la
+  314  cd UTNFRA_SO_2do_TP_SOSA/
+  315  ls -la
+  316  git add .
+  317  git commit -m "add: punto d done"
+  318  git push
+  319  history -a
+  320  history
+  321  cat << EOF >> .bash_history
+  322  useradd -m -s /bin/bash -c "usuario para tp2" jsosa
+  323  sudo useradd -m -s /bin/bash -c "usuario para tp2" jsosa
+  324  cd /etc/sudoers.d/
+  325  ls -la
+  326  cat << EOF >> jsosa 
+  327  jsosa ALL=(ALL) NOPASSWD:ALL
+  328  EOF
+  329  cat .bash_history 
+  330  history -a
+  331  source ~/.bashrc && history -a
+  332  history
+  333  cd /home/jsosa/UTNFRA_SO_2do_TP_SOSA/
+  334  ls -la
+  335  nano .bash_history 
+  336  history > /home/jsosa/UTNFRA_SO_2do_TP_SOSA/historial.txt
